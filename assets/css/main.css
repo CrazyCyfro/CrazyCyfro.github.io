@@ -215,8 +215,8 @@ input, select, textarea {
 	/* Set your background with this */
 
 		background:
-			radial-gradient(ellipse 90% 65% at 75% -15%, rgba(96, 91, 255, 0.14), transparent 60%),
-			radial-gradient(ellipse 70% 55% at 10% 115%, rgba(255, 71, 87, 0.10), transparent 60%),
+			radial-gradient(ellipse 90% 65% at 75% -15%, rgba(255, 27, 27, 0.16), transparent 60%),
+			radial-gradient(ellipse 70% 55% at 10% 115%, rgba(255, 27, 27, 0.08), transparent 60%),
 			radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255, 255, 255, 0.03), transparent 70%),
 			linear-gradient(165deg, #0c0c10 0%, #14141b 45%, #0e0e13 100%);
 		height: 100%;
@@ -1393,40 +1393,62 @@ input, select, textarea {
 			backdrop-filter: blur(10px);
 			background-color: rgba(255, 255, 255, 0.04);
 			border: solid 1px rgba(255, 255, 255, 0.18);
+			color: #fff;
 		}
 
 			#tabs a:hover {
-				background-color: rgba(255, 255, 255, 0.12);
-				border-color: rgba(255, 255, 255, 0.4);
+				background-color: rgba(255, 27, 27, 0.1);
+				border-color: rgba(255, 27, 27, 0.5);
 			}
 
 			#tabs a.current {
-				background-color: rgba(255, 255, 255, 0.92);
+				background-color: #ff1b1b;
 				border-color: transparent;
-				color: #101014;
+				color: #fff;
 			}
 
 	.button {
-		border: solid 1px rgba(255, 255, 255, 0.3);
+		border: solid 1px rgba(255, 27, 27, 0.4);
 	}
 
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.12);
-			border-color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(255, 27, 27, 0.12);
+			border-color: #ff1b1b;
 		}
 
 	#header nav a:before,
 	.panel nav.icons a:before {
-		border-color: rgba(255, 255, 255, 0.3);
+		border-color: rgba(255, 27, 27, 0.4);
 	}
 
 	#signup input[type="email"],
 	#signup input[type="submit"] {
-		border-color: rgba(255, 255, 255, 0.3);
+		border-color: rgba(255, 27, 27, 0.4);
+	}
+
+	#signup input[type="submit"] {
+		background-color: #ff1b1b;
 	}
 
 	.formkit-form {
 		margin: 0 auto !important;
+	}
+
+	.formkit-submit,
+	.formkit-submit[data-element="submit"] button {
+		background-color: #ff1b1b !important;
+	}
+
+	a {
+		color: #ff1b1b;
+	}
+
+	#header .logo {
+		display: block;
+		height: 7em;
+		image-rendering: pixelated;
+		margin: 0 auto 0.5em auto;
+		width: 7em;
 	}
 
 	.signup-divider {
